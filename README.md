@@ -45,3 +45,21 @@ See: `Fix-PdfPreview.ps1`
 Windows blocks preview handlers when files are marked as coming from an external zone (MOTW).
 
 Registry key involved:
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+
+Value:
+
+180F = 0
+
+---
+
+## ⚠️ Notes
+
+- May be overridden by Group Policy or Intune configuration policies
+- Test in controlled environment before deploying globally
+
+---
+
+## 📜 License
+
+MIT License
